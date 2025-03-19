@@ -1,0 +1,128 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-height: 100vh;
+    background: linear-gradient(135deg, #353232,#C47623);
+    padding: 10px;
+}
+
+.todo-ap{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-ap h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.todo-ap h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button{
+    border: none;
+    outline: none;
+    background: #ff5945;
+    padding: 16px 50px;
+    color: #fff;
+    border-radius: 40px ;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(To-Do-Img/images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+}
+
+ul li.cheked{
+         color: #555;
+         text-decoration: line-through;
+}
+
+ul li.cheked::before{
+    background-image: url(To-Do-Img/images/checked.png);
+}
+
+
+/* span js  */
+ ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    
+ }
+
+ ul li span:hover{
+    background: #edeef0;
+
+ }
+
+ .container h2 b {
+
+    font-size: 50px;
+    background: linear-gradient( #990302,#EBE2E0);
+    z-index: 4;
+    border-radius: 50%;
+    padding: 10px;
+ }
+    
